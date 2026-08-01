@@ -39,16 +39,15 @@
 </div>
 
 <script>
-  const code = `javascript:fetch('https://raw.githubusercontent.com/jack1988520-pixel/casino.js/main/casino.js').then(r=>r.text()).then(eval)
-  document.getElementById('modLink').href = code;
-
-  function copyCode() {
-    navigator.clipboard.writeText(code).then(() => {
-      alert('✅ 已複製 MOD 代碼！請前往編輯書籤並貼上至網址欄。');
-    }).catch(() => {
-      alert('複製失敗，請手動複製。');
-    });
-  }
+  const code = `javascript:fetch('https://raw.githubusercontent.com/jack1988520-pixel/casino.js/main/casino.js').then(r=>r.text()).then(eval)`;
+document.getElementById('modLink').href = code;
+function copyCode() {
+  navigator.clipboard.writeText(code).then(() => {
+    alert('✅ 已複製 MOD 代碼！請前往編輯書籤並貼上至網址欄。');
+  }).catch(() => {
+    alert('複製失敗，請手動複製。');
+  });
+}
 </script>
 
 </body>
